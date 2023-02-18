@@ -1,0 +1,185 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+}
+
+.screen_container{
+    perspective: 900px;
+    margin-bottom: 15px;
+}
+
+.screen_box {
+    height: 80px;
+    background: #e6e6e6;
+    width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    transform: rotateX(-45deg);
+}
+
+.movie_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    color: #fff;
+    grid-gap: 20px;
+}
+
+.choose_movie {
+    color: #333;
+}
+
+.main_container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+div#wrapper {
+    display: flex;
+    margin: 20px 0;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+select#movie-selector,#movie-price-selector {
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.info_bar-container {
+    width: 500px;
+    margin: 15px auto 0 auto;
+    background: #5384b3;
+    padding: 20px;
+    border-radius: 2px;
+    box-shadow: 0 0 10px #0002;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 20px;
+}
+
+.not_selected,.selected,.occupied_selected {
+    display: flex;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.seat  {
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px 10px 0 0;
+    background-color: #fff;
+}
+
+.select{
+    background-color: dodgerblue !important;
+}
+
+.occupied{
+    background-color: #c4c4c4 !important;
+}
+
+.ns-text,.s-text,.os-text {
+    color: #fff;
+}
+
+.seat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px,1fr));
+    grid-gap: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.seat_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px,1fr));
+    grid-gap: 20px;
+    color: #fff;
+}
+
+.seat_wrapper div {
+    place-self: center;
+}
+
+.content {
+    color: #fff;
+    display: flex;
+    grid-gap: 10px;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+.seat_active{
+    background-color: dodgerblue;
+}
+
+.seat_deselect{
+    background-color: #fff;
+}
+
+.seat{
+    background-color: #fff;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------container Width---------------------*/
+@media (min-width: 1300px) {
+    .container {
+       width: 1300px;
+    }
+ }
+
+ @media (min-width: 1200px) {
+    .container {
+       width: 420px;
+    }
+ }
+
+ @media (min-width: 992px) {
+    .container {
+       width: 970px;
+    }
+ }
+
+ @media (min-width: 768px) {
+    .container {
+       width: 750px;
+    }
+ }
+
+ @media (max-width: 1400px) {
+    .container {
+       width: 90%;
+    }
+ }
+
+ @media (max-width: 992px) {
+    .container {
+       width: 100%;
+    }
+ }
+
